@@ -1,0 +1,478 @@
+﻿/* ── RESPONSIVE ── */
+@media(max-width:1100px) {
+    .pcat-wrap {
+        grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .pcd-body {
+        padding: 28px;
+    }
+
+    .prod-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .hero-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-col-left {
+        flex: 1 1 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-col-right {
+        flex: 1 1 100%;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .hero-sub {
+        max-width: 90%;
+    }
+
+    .hero-value-props {
+        justify-content: center;
+    }
+
+    .hero-btns {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:900px) {
+    .pcat-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .pcat-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+
+    .pcat-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 8px;
+    }
+
+    .pcat-img {
+        width: 44px;
+        height: 44px;
+    }
+
+    .pcat-info p {
+        display: none;
+    }
+
+    .pcat-arrow {
+        display: none;
+    }
+
+    .pcat-panel {
+        position: static;
+    }
+
+    .pcat-card::before {
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+    .section {
+        padding: 36px 5%;
+    }
+
+    #why-us {
+        padding: 36px 5% !important;
+    }
+
+    .showcase-band {
+        padding-top: 28px !important;
+        padding-bottom: 32px !important;
+    }
+
+    footer {
+        padding-top: 48px;
+    }
+
+    .prod-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .pg-card {
+        padding: 14px;
+    }
+
+    .pg-info strong {
+        font-size: 11px;
+    }
+
+    .pg-info span {
+        font-size: 10px;
+    }
+
+    #hero {
+        padding: 40px 5% 80px;
+    }
+
+    .hero-sub {
+        max-width: 100%;
+    }
+
+    .s-head {
+        margin-bottom: 24px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 68px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        padding: 20px 5%;
+        gap: 18px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-phone {
+        display: none;
+    }
+
+    .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 40px auto 20px;
+        padding: 32px 5%;
+    }
+
+    .products-grid,
+    .why-grid,
+    .testi-grid,
+    .lic-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    .lic-card {
+        padding: 32px 20px;
+    }
+
+    .lic-card svg {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 16px;
+    }
+
+    .lic-card h4 {
+        font-size: 15px;
+    }
+
+
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .brands-grid .brand-tile:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: calc((100% - 24px) / 2);
+    }
+
+    #brands .brands-grid .brand-logo-wrapper img {
+        filter: none;
+        opacity: 1;
+    }
+
+    .contact-wrap {
+        grid-template-columns: 1fr !important;
+        padding: 40px 20px !important;
+        gap: 40px !important;
+    }
+
+    .contact-left h2 {
+        font-size: 32px !important;
+        line-height: 1.1;
+    }
+
+    .contact-left p {
+        margin-bottom: 32px;
+        font-size: 15px;
+    }
+
+    .contact-form-wrap {
+        padding: 32px 20px !important;
+    }
+
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 32px 20px;
+        padding-bottom: 48px;
+    }
+
+    .footer-grid .fg-about {
+        grid-column: 1 / -1;
+    }
+
+    .footer-grid>.fg-col:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .footer-grid .fg-col h4 {
+        margin-bottom: 20px;
+        font-size: 11px;
+        letter-spacing: 1.2px;
+    }
+
+    .footer-grid .fg-col ul {
+        gap: 10px;
+    }
+
+    .footer-grid .fg-col ul a {
+        font-size: 12px;
+    }
+
+    .brands-grid>*,
+    .footer-grid>*,
+    .products-grid>*,
+    .why-grid>*,
+    .testi-grid>*,
+    .lic-grid>* {
+        min-width: 0;
+    }
+
+    .pcat-card:hover,
+    .pcat-card.active {
+        transform: none;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        max-width: 100%;
+    }
+
+    .section,
+    .showcase-band {
+        overflow-x: hidden;
+    }
+
+    .foot-ci a,
+    .foot-ci p {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .svc-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .svc-card {
+        flex-direction: column;
+        padding: 24px 16px;
+        gap: 16px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .svc-icon {
+        width: 54px;
+        height: 54px;
+        border-radius: 14px;
+    }
+
+
+    .svc-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .svc-content h3 {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+
+    .svc-content p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+
+@media(max-width:500px) {
+    .section {
+        padding: 30px 5%;
+    }
+
+    #why-us {
+        padding: 30px 5% !important;
+    }
+
+    .showcase-band {
+        padding-top: 24px !important;
+        padding-bottom: 28px !important;
+    }
+
+    footer {
+        padding-top: 40px;
+    }
+
+    .s-head {
+        margin-bottom: 20px;
+    }
+
+    .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 32px auto 16px;
+        padding: 28px 5%;
+    }
+
+    .pcat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prod-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .pg-card {
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .pg-info strong {
+        font-size: 10px;
+    }
+
+    .pg-info span {
+        display: none;
+    }
+
+    .products-grid,
+    .why-grid,
+    .testi-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lic-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .lic-card {
+        padding: 24px 12px;
+        border-radius: 12px;
+    }
+
+    .lic-card svg {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 12px;
+    }
+
+    .lic-card h4 {
+        font-size: 13px;
+    }
+
+    .lic-card p {
+        font-size: 11px;
+    }
+
+
+    .brands-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .brands-grid .brand-tile:last-child:nth-child(odd) {
+        width: calc((100% - 12px) / 2);
+    }
+
+    .brand-tile {
+        padding: 18px 10px;
+    }
+
+    .contact-left h2 {
+        font-size: 26px !important;
+    }
+
+    .cf {
+        gap: 12px;
+    }
+
+    .cf-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 10px;
+    }
+
+    .cf-val {
+        font-size: 14px;
+    }
+
+    .form-btns {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-wa {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 16px;
+    }
+
+    .btn-mail {
+        width: 100%;
+        text-align: center;
+        padding: 12px 16px;
+    }
+
+    .brand-logo-wrapper {
+        height: 52px;
+        margin-bottom: 0;
+    }
+
+    .brand-logo-wrapper img {
+        max-width: 92%;
+    }
+
+}

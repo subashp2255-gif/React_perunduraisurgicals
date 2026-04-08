@@ -1,0 +1,166 @@
+﻿/* ── PRODUCT MODAL ── */
+.product-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(8, 18, 33, 0.7);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    padding: 5%;
+}
+
+.product-modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.product-modal {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    max-width: 720px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.35);
+    transform: scale(0.9) translateY(40px);
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+    position: relative;
+}
+
+.product-modal-overlay.active .product-modal {
+    transform: scale(1) translateY(0);
+}
+
+.pm-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(8, 18, 33, 0.08);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.pm-close:hover {
+    background: rgba(8, 18, 33, 0.15);
+    transform: rotate(90deg);
+}
+
+.pm-close svg {
+    width: 20px;
+    height: 20px;
+}
+
+.pm-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pm-img-wrap {
+    background: linear-gradient(135deg, #f1f5f9 0%, #e8eef5 100%);
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 340px;
+}
+
+.pm-img {
+    max-width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+}
+
+.pm-img:hover {
+    transform: scale(1.05);
+}
+
+.pm-content {
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pm-cat {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.pm-name {
+    font-family: 'Instrument Serif', serif;
+    font-size: 28px;
+    color: var(--navy);
+    margin-bottom: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.pm-desc {
+    font-size: 15px;
+    color: var(--text-mid);
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+.pm-wa {
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.pm-wa:hover {
+    background: #1eba58;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+.pm-wa svg {
+    flex-shrink: 0;
+}
+
+@media(max-width:768px) {
+    .pm-body {
+        grid-template-columns: 1fr;
+    }
+
+    .pm-img-wrap {
+        min-height: 200px;
+        padding: 24px;
+    }
+
+    .pm-content {
+        padding: 24px;
+    }
+
+    .pm-name {
+        font-size: 22px;
+    }
+}

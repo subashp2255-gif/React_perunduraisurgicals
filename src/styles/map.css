@@ -1,0 +1,50 @@
+﻿/* ── MAP ── */
+.map-band {
+    padding: 0 5% 72px;
+}
+
+.map-box {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    height: 300px;
+    background: var(--bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: var(--shadow-sm);
+}
+
+.map-box svg {
+    width: 36px;
+    height: 36px;
+    fill: none;
+    stroke: var(--blue);
+    stroke-width: 1.5;
+}
+
+.map-box p {
+    font-size: 13.5px;
+    color: var(--text-soft);
+}
+
+.map-box a {
+    background: var(--blue);
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s;
+}
+
+.map-box a:hover {
+    background: var(--blue-mid);
+}
+

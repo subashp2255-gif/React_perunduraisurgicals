@@ -1,0 +1,116 @@
+﻿/* ── FOOTER ── */
+footer {
+    background: var(--navy);
+    padding: 100px 5% 0;
+    color: var(--white);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 64px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.fg-about p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: 24px;
+    max-width: 320px;
+}
+
+.foot-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+.foot-social a {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.foot-social a:hover {
+    background: var(--blue);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(26, 95, 168, 0.35);
+}
+
+.foot-social svg {
+    width: 20px;
+    height: 20px;
+}
+
+.fg-col h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.fg-col ul {
+    list-style: none;
+    display: grid;
+    gap: 14px;
+}
+
+.fg-col ul a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.fg-col ul a:hover {
+    color: var(--cyan);
+}
+
+.foot-ci {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.foot-ci svg {
+    width: 18px;
+    height: 18px;
+    color: var(--cyan);
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.foot-ci p,
+.foot-ci a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
